@@ -5,11 +5,32 @@ public class Usuario {
     private String email;
     private String cpf;
 
-    public Usuario (String nome, String sobrenome, int idade, String email, String cpf){
-        this.nome = nome;
-        this.sobrenome = sobrenome;
-        this.idade = idade;
-        this.email = email;
-        this.cpf = cpf;
+    public Usuario(String nome, String sobrenome, int idade, String email, String cpf) {
+        this.nome = this.nome;
+        this.sobrenome = this.sobrenome;
+        this.idade = this.idade;
+        this.email = this.email;
+        this.cpf = this.cpf;
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getSobrenome() {
+        return sobrenome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
 }
