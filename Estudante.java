@@ -6,7 +6,10 @@ public class Estudante extends Usuario{
         this.curso = curso;
     }
 
-
+    @Override
+    public String toString() {
+        return getNome() + getSobrenome();
+    }
 }
 
 

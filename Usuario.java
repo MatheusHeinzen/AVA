@@ -33,4 +33,10 @@ public class Usuario {
         return cpf;
     }
 
+    public void adicionarEstudante(String nome, String sobrenome, int idade, String email, String cpf) {
+    }
+
+    public void listarAlunos() {
+
+    }
 }

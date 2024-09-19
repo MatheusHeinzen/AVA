@@ -13,16 +13,16 @@ public class Professor extends Usuario{
     public void adicionarEstudante (String nome, String sobrenome, int idade, String email, String cpf){
         Estudante novoEstudante = new Estudante(nome, sobrenome, idade, email, cpf);
         listaEstudante.add(novoEstudante);
-        System.out.println("Estudante" + nome + "Adicionado com sucesso!");
+        System.out.println("Estudante " + nome + " adicionado com sucesso!");
 
     }
-    // Método para exibir os alunos
+    // Metodo para exibir os alunos
     public void listarAlunos() {
-        if (estudantes.isEmpty()) {
+        if (listaEstudante.isEmpty()) {
             System.out.println("Nenhum aluno cadastrado.");
         } else {
             System.out.println("Lista de alunos:");
-            for (Estudante aluno : estudantes) {
+            for (Object aluno : listaEstudante) {
                 System.out.println(aluno);
             }
         }

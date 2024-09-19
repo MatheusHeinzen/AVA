@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Disciplina historia = new Disciplina(8);
-        Professor professor = new Professor("Jorge", "Amaral", 22, "jorgin@gmail.com", "173482465-98", historia);
+        Usuario professor = new Professor("Jorge", "Amaral", 22, "jorgin@gmail.com", "173482465-98", historia);
 
         while (true) {
             System.out.println("1 - Adicionar novo aluno");
@@ -18,14 +18,14 @@ public class Main {
                 case 1:
                     System.out.print("Nome do estudante: ");
                     String nome = scanner.nextLine();
-                    System.out.println("Sobrenome");
+                    System.out.print("Sobrenome: ");
                     String sobrenome = scanner.nextLine();
                     System.out.print("Idade do estudante: ");
                     int idade = scanner.nextInt();
-                    System.out.println("Email do estudante: ");
-                    String email = scanner.nextLine();
-                    System.out.println("Digite o CPF do estudante: ");
-                    String cpf = scanner.nextLine();
+                    System.out.print("Email do estudante: ");
+                    String email = scanner.next();
+                    System.out.print("Digite o CPF do estudante: ");
+                    String cpf = scanner.next();
 
                     professor.adicionarEstudante(nome, sobrenome, idade, email, cpf);
                     break;
