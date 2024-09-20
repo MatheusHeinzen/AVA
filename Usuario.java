@@ -1,9 +1,10 @@
-public class Usuario {
+public abstract class Usuario {
     private String nome;
     private String sobrenome;
     private int idade;
     private String email;
     private String cpf;
+    private String senha;
 
     public Usuario(String nome, String sobrenome, int idade, String email, String cpf) {
         this.nome = nome;
@@ -11,6 +12,15 @@ public class Usuario {
         this.idade = idade;
         this.email = email;
         this.cpf = cpf;
+        this.senha = "Bem-vindo"+cpf.substring(0,3);
+    }
+    public Usuario(String nome, String sobrenome, int idade, String email, String cpf, String senha) {
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.idade = idade;
+        this.email = email;
+        this.cpf = cpf;
+        this.senha = senha;
     }
 
     public String getNome() {
@@ -33,10 +43,18 @@ public class Usuario {
         return cpf;
     }
 
+    public String getSenha() {
+        return senha;
+    }
+
     public void adicionarEstudante(String nome, String sobrenome, int idade, String email, String cpf) {
     }
 
     public void listarAlunos() {
+
+    }
+
+    public void getEstudantes(){
 
     }
 }
