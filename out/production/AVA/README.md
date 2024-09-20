@@ -1,5 +1,11 @@
 # AVA
 
+## Participantes
+
+- Edmund Sousa
+- Matheus Heinzen
+- Vinicius Teider
+
 ## Sobre o Projeto
 
 Este projeto é um sistema de "Ambiente Virtual de Aprendizado" feito em java para uma atividade de **Programação Orientada a Objetos (POO)**, inspirado no próprio AVA da Instituição PUCPR.

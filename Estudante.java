@@ -3,12 +3,11 @@ public class Estudante extends Usuario{
 
     public Estudante(String nome, String sobrenome, int idade, String email, String cpf){
         super(nome, sobrenome, idade, email, cpf);
-        this.curso = curso;
     }
 
     @Override
     public String toString() {
-        return getNome() + getSobrenome();
+        return getNome()+ " " + getSobrenome();
     }
 }
 

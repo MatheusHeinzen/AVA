@@ -6,11 +6,11 @@ public class Usuario {
     private String cpf;
 
     public Usuario(String nome, String sobrenome, int idade, String email, String cpf) {
-        this.nome = this.nome;
-        this.sobrenome = this.sobrenome;
-        this.idade = this.idade;
-        this.email = this.email;
-        this.cpf = this.cpf;
+        this.nome = nome;
+        this.sobrenome = sobrenome;
+        this.idade = idade;
+        this.email = email;
+        this.cpf = cpf;
     }
 
     public String getNome() {

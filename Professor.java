@@ -2,14 +2,14 @@ import java.util.ArrayList;
 
 public class Professor extends Usuario{
     private Disciplina disciplina;
+    private ArrayList<Estudante> listaEstudante = new ArrayList<Estudante>();
 
     public Professor(String nome, String sobrenome, int idade, String email, String cpf, Disciplina disciplina) {
         super(nome, sobrenome, idade, email, cpf);
         this.disciplina = disciplina;
     }
 
-    ArrayList listaEstudante = new ArrayList<Estudante>();
-
+    @Override
     public void adicionarEstudante (String nome, String sobrenome, int idade, String email, String cpf){
         Estudante novoEstudante = new Estudante(nome, sobrenome, idade, email, cpf);
         listaEstudante.add(novoEstudante);
@@ -17,12 +17,13 @@ public class Professor extends Usuario{
 
     }
     // Metodo para exibir os alunos
+    @Override
     public void listarAlunos() {
         if (listaEstudante.isEmpty()) {
             System.out.println("Nenhum aluno cadastrado.");
         } else {
             System.out.println("Lista de alunos:");
-            for (Object aluno : listaEstudante) {
+            for (var aluno : listaEstudante) {
                 System.out.println(aluno);
             }
         }
